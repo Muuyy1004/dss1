@@ -7,7 +7,7 @@ from openai import OpenAI
 
 api_key = "sk-U1BAUIuj0Moz0YAYD27e05513c8e44F0AeFf26Bf2bA87b00"
 api_base = "https://maas-api.cn-huabei-1.xf-yun.com/v1"
-MODEL_ID = "xop3qwen1b7r"
+MODEL_ID = "xopdeepseekocr"
 client = OpenAI(api_key=api_key, base_url=api_base)
 
 
@@ -120,5 +120,6 @@ if uploaded:
         ai_text = ai_explain(task, "KNN（无 sklearn）", ds_name, highlights)
         st.subheader("🤖 AI 解读与管理建议")
         st.write(ai_text)
+
 
 
